@@ -1,0 +1,20 @@
+{
+  "name": "my-github-viewer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "elm.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "elm-live src-v2/Main.elm --pushstate -- --output=elm.js",
+    "test": "elm-test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "elm": "^0.19.0-bugfix2",
+    "elm-live": "^3.2.3",
+    "elm-test": "^0.19.0-rev3"
+  }
+}
