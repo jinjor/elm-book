@@ -33,3 +33,25 @@ showNumbersUntil =
 
 - （誤） `<|`と`|>`は優先順位かつ結合の向きが逆なので、
 - （正） `<|`と`|>`は優先順位が同じかつ結合の向きが逆なので、
+
+### p93
+
+（誤）
+```elm
+Set.length set -- 3
+```
+（正）
+```elm
+Set.size set -- 3
+```
+
+### p135
+
+（誤）
+```elm
+decodeString (at ["person", "age" ] int   ) json == Ok "42
+```
+（正）
+```elm
+decodeString (at ["person", "age" ] int   ) json == Ok 42
+```
