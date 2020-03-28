@@ -7,12 +7,20 @@
 ### p44
 
 - （誤） `(1 :: (2 :: (3 :: []))`と解釈されます
-- （正） `(1 :: (2 :: (3 :: [])))`と解釈されます
+（正） `(1 :: (2 :: (3 :: [])))`と解釈されます
 
 ### p76
 
-- （誤） showNumbersUntil =\n    String.join \",\" << List.map String.fromInt << List.range 1 max
-- （正） showNumbersUntil =\n    String.join \",\" << List.map String.fromInt << List.range 1
+（誤）
+```elm
+showNumbersUntil =
+    String.join \",\" << List.map String.fromInt << List.range 1 max
+```
+（正）
+```elm
+showNumbersUntil =
+    String.join \",\" << List.map String.fromInt << List.range 1
+```
 
 ### p78
 
