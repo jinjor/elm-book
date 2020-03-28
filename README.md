@@ -21,12 +21,12 @@ elm 0.19 から `λ` 記号が使えなくなったようです。
 （誤）
 ```elm
 showNumbersUntil =
-    String.join \",\" << List.map String.fromInt << List.range 1 max
+    String.join "," << List.map String.fromInt << List.range 1 max
 ```
 （正）
 ```elm
 showNumbersUntil =
-    String.join \",\" << List.map String.fromInt << List.range 1
+    String.join "," << List.map String.fromInt << List.range 1
 ```
 
 ### p78
