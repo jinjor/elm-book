@@ -110,3 +110,47 @@ p156からp159にかけて、同様に型注釈が誤っている箇所が複数
 
 - （誤）hhtps://github.com/elm/browser/blob/master/src/Elm/Kernel/Browser.js
 - （正）htps://github.com/elm/browser/blob/master/src/Elm/Kernel/Browser.js
+
+### p190
+
+（誤）
+```elm
+import Url.Parser exposing ((</>), (<?>), s, int, top, map)
+```
+（正）
+```elm
+import Url.Parser exposing ((</>), (<?>), Parser, int, map, oneOf, s, top)
+```
+
+### p191
+
+（誤）
+```elm
+type Route
+    = Top
+    | Login
+    | Articles (Maybe String)
+    | ArticleSettings Int
+```
+（正）
+```elm
+type Route
+    = Top
+    | Login
+    | Articles (Maybe String)
+    | Article Int
+    | ArticleSettings Int
+```
+
+---
+
+（誤）
+```elm
+urlToRoute url =
+    Url.Parser.perse routeParser url
+```
+（正）
+```elm
+urlToRoute url =
+    Url.Parser.parse routeParser url
+```
