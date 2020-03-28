@@ -34,7 +34,20 @@ showNumbersUntil =
 - （誤） `<|`と`|>`は優先順位かつ結合の向きが逆なので、
 - （正） `<|`と`|>`は優先順位が同じかつ結合の向きが逆なので、
 
+### p88
+
+（誤）
+```elm
+List.map toString [1,2,3]
+```
+（正）
+```elm
+List.map String.fromInt [1,2,3]
+```
+
 ### p93
+
+#### Set
 
 （誤）
 ```elm
@@ -43,6 +56,21 @@ Set.length set -- 3
 （正）
 ```elm
 Set.size set -- 3
+```
+
+#### Array
+
+（誤）
+```elm
+Array.get 0 -- Just "one"
+
+Array.get 3 -- Nothing
+```
+（正）
+```elm
+Array.get 0 array -- Just "one"
+
+Array.get 3 array -- Nothing
 ```
 
 ### p135
@@ -55,3 +83,30 @@ decodeString (at ["person", "age" ] int   ) json == Ok "42
 ```elm
 decodeString (at ["person", "age" ] int   ) json == Ok 42
 ```
+
+### p154
+
+（誤）
+```elm
+view : Html msg
+view model =
+...
+```
+（正）
+```elm
+view : Model -> Html msg
+view model =
+...
+```
+
+p156からp159にかけて、同様に型注釈が誤っている箇所が複数あります。
+
+### p168
+
+- （誤）詳細は《Task》(p150)を参照してください。
+- （正）詳細は《Browser.applicationの制約》(p186)を参照してください。
+
+### p187
+
+- （誤）hhtps://github.com/elm/browser/blob/master/src/Elm/Kernel/Browser.js
+- （正）htps://github.com/elm/browser/blob/master/src/Elm/Kernel/Browser.js
