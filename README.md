@@ -109,7 +109,7 @@ p156からp159にかけて、同様に型注釈が誤っている箇所が複数
 ### p187
 
 - （誤）hhtps://github.com/elm/browser/blob/master/src/Elm/Kernel/Browser.js
-- （正）htps://github.com/elm/browser/blob/master/src/Elm/Kernel/Browser.js
+- （正）https://github.com/elm/browser/blob/master/src/Elm/Kernel/Browser.js
 
 ### p190
 
