@@ -111,7 +111,7 @@ p156からp159にかけて、同様に型注釈が誤っている箇所が複数
 - （誤）hhtps://github.com/elm/browser/blob/master/src/Elm/Kernel/Browser.js
 - （正）https://github.com/elm/browser/blob/master/src/Elm/Kernel/Browser.js
 
-### p190
+### p191
 
 （誤）
 ```elm
@@ -122,7 +122,7 @@ import Url.Parser exposing ((</>), (<?>), s, int, top, map)
 import Url.Parser exposing ((</>), (<?>), Parser, int, map, oneOf, s, top)
 ```
 
-### p191
+### p192
 
 （誤）
 ```elm
@@ -141,6 +141,8 @@ type Route
     | Article Int
     | ArticleSettings Int
 ```
+※上記の記述はp191〜p192に跨っています
+
 
 ---
 
